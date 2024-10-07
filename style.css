@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ body {
+    margin: 0;
+    padding: 0;
+  }
+ /* navbar */
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: #D9D9D9;
+    border-bottom: 2px solid #c1c1c1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+  }
+  .navbar .navbar-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    /* margin-top: -30px; */
+    padding: 10px;
+  }
+
+  .navbar-nav a {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    margin-top: 6px;
+  }
+
+  .navbar-nav a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+
+  }
+
+  .navbar-extra a {
+    color: #424242;
+    height: 20px;
+  }
+  /* navbar end  */
+  .container {
+    width: 1256px;
+    height: 100vh;
+  }
+  .flex {
+  display: flex;
+  }
+  .col-1 {
+    width: 50%;
+    height: 100%;
+    border: 1px solid transparent;
+    display: flex;
+    background-color: #f5f5f5;
+    position: relative;
+  }
+    .col-1 img {
+    width: 20rem;
+    margin-top: 150px;
+    margin-left: 150px;
+  }
+  .col-1 .titk {
+    font-size: 70px;
+    margin-top: 480px;
+    margin-left: -189px;
+  }
+  .col-1 .panah-icon {
+    font-size: 30px;
+    margin-top: 300px;
+    margin-left: 210px;
+  }
+  /* col 1 end */
+  .col-2 {
+    font-family: "Poppins", sans-serif;
+    width: 50%;    
+    border: 1px solid transparent;
+  }
+  .col-2 .text-1 {
+    font-weight: 300;
+    margin-top: 120px;
+    margin-left: 90px;
+  }
+  .col-2 .nama-barang  .promo{
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 90px;
+    margin-top: -20px;
+  }
+  .col-2 .nama-barang .color {
+    font-weight: 200;
+    font-size: 30px;
+    margin-left: 90px;
+    margin-top: -50px;
+  }
+  .col-2 .star {
+    font-size: 30px;
+    margin-left: 90px;
+    margin-top: -30px;
+  }
+  .col-2 .star .star-yellow {
+    color: yellow;
+  }
+  .col-2 .star .star-abu {
+    color: #c1c1c1;
+  }
+  .col-2 .detail {
+    display: flex;
+    justify-items: center;
+    margin-left: 90px;
+    margin-top: -10px;
+    font-weight: 300;
+  }
+  .col-2 .detail .order {
+    margin-left: 10rem;
+  }
+  .col-2 .logo-harga {
+    display: flex;
+    font-size: 40px;
+    margin-left: 90px;
+  }
+  .col-2 .logo-harga p {
+    margin-top: -10px;
+    color: yellow;
+  }
+  .number-input {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background-color: #eee6e6;
+    padding: 5px;
+    width: 160px;
+    height: 30px;  
+   box-shadow: 1px 1px 4px rgba(1, 1, 1, 0.5);
+  
+  }
+  
+  .number-input button {
+    background-color: #7f7b7b;
+    border: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .number-input button:focus {
+    outline: none;
+  }
+  
+  .number-input input[type=number] {
+    width: 30px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .number-input input[type=number]:focus {
+    outline: none;
+  }
+  .minus {
+    margin-right: 50px;
+  }
+  .plus {
+    margin-right: -5px;
+  }
+  .quantity {
+    margin-right: 30px;
+  }
+  .col-2 .menu {
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-top: -50px;
+  }
+  .col-2 .menu .pilihan {
+    margin-right: 200px;
+  }
+  .col-2 .ukuran-warna-bahan {
+    margin-left: 90px;
+    font-size: 10px;
+    margin-top: -20px;
+    font-weight: 300;
+    display: flex;
+  }
+  .col-2 .ukuran-warna-bahan .p2 {
+    margin-left: 200px;
+  }
+  .colr {
+    display: flex;
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c1 {
+    background-color: aqua;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c2 {
+    background-color: #ff0000;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c3 {
+    background-color: #15ff00;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c4 {
+    background-color: rgb(47, 0, 255);
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+  }
+  .col-2 .total {
+    margin-left: 90px;
+    margin-top: -13px;
+  }
+  .col-2 .total .text-2 {
+    margin-top: -3px;
+  }
+  .col-2 .total .totol {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .col-2 .total .flex {
+    font-size: 30px;
+    margin-top: -10px;
+    font-weight: 500;
+  }
+  .col-2 .total .btn {
+    margin-left: 300px;
+    margin-top: -70px;
+  }
+  .col-2 .total .btn a {
+    color: #000000;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 10px 30px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 4px rgba(1, 1, 1, 0.5);
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c1:hover {
+      transform: scale(2.2);
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c2:hover {
+      transform: scale(2.2);
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c3:hover {
+      transform: scale(2.2);
+  }
+  .col-2 .ukuran-warna-bahan .p2 .c4:hover {
+      transform: scale(2.2);
+  }
+
+  
+

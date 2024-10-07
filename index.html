@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <!-- feather icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+    <title>tugas dari riki</title>
+</head>
+<body>
+      <!-- navbar start -->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Selling plain t-shirts</a>
+        <div class="navbar-nav">
+            <a href="#home">Order Clothes</a>
+            <a href="#about">Color</a>
+            <a href="#menu">Clothes Size</a>
+            <a href="#about">hat</a>
+  
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        </div>
+       
+    </nav>
+    <!-- navbar end -->
+     <div class="container flex">
+            <!-- Pages right start -->
+            <div class="col-1">
+               <div class="img-baju">
+                <img src="/img/OIP1.png" alt="">
+               </div>
+               <div class="titk">
+                <i class="fa-duotone fa-solid fa-ellipsis"></i>
+               </div>
+               <div class="panah-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+               </div>
+            </div>
+            <!-- Pages right end -->
+             
+            <!-- Pages left start -->
+            <div class="col-2">
+               <div class="text-1">
+                <p>New Coolection</p>
+               </div>
+               <div class="nama-barang">
+                <p class="promo">3 pairs 100</p>
+                <p class="color">black</p>
+               </div>
+               <div class="star">
+                <i class="fa-solid fa-star star-yellow"></i>
+                <i class="fa-solid fa-star star-yellow"></i>
+                <i class="fa-solid fa-star star-yellow"></i>
+                <i class="fa-solid fa-star star-abu"></i>
+                <i class="fa-solid fa-star star-abu"></i>
+               </div>
+               <div class="detail">
+                <p class="price">price</p>
+                <p class="order">order quantity</p>
+               </div>
+               <div class="logo-harga">
+                <i class="fa-solid fa-dollar-sign" style="color: yellow;"></i>
+                <p id="item-price">100.000</p> <!-- ID untuk harga satuan barang -->
+                <div class="number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown(); updateTotal();" class="minus">-</button>
+                    <input id="quantity" class="quantity" min="1" name="quantity" value="2" type="number" onchange="updateTotal()">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp(); updateTotal();" class="plus">+</button>
+                </div>
+            </div>
+               <div class="menu">
+                <p class="munu-pilihan">which exists</p>
+                <p class="pilihan">details</p>
+               </div>
+               <div class="ukuran-warna-bahan">
+                <div class="p1">
+                    <p>size</p>
+                    <p>color</p>
+                    <p>material</p>
+                </div>
+                <div class="p2">
+                    <p>S + M + L +  XL + XXL</p>
+                    <div class="colr">
+                        <div class="c1"></div>
+                        <div class="c2"></div>
+                        <div class="c3"></div>
+                        <div class="c4"></div>
+                    </div>
+                   <p>100% cutton</p>
+                </div>
+               </div>
+               <div class="total">
+                <p class="totol">Total biaya</p>
+                <div class="flex">
+                    <i class="fa-solid fa-dollar-sign" style="color: yellow;"></i>
+                    <p id="total-price" style="color: yellow;" class="text-2">200.000</p> <!-- ID untuk total harga -->
+                </div>
+                <div class="btn">
+                     <a href="#">pesan sekarang</a>
+                </div>
+               
+
+            </div>
+
+            </div>
+            <!-- Pages left end --> 
+     </div>
+ 
+      <!-- feather icons -->
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        const pricePerItem = 100000; // Harga per item
+    
+        // Fungsi untuk memperbarui total harga
+        function updateTotal() {
+            // Ambil jumlah barang dari input
+            const quantity = parseInt(document.getElementById('quantity').value);
+            
+            // Hitung total harga
+            const totalPrice = pricePerItem * quantity;
+            
+            // Format total harga
+            const formattedPrice = totalPrice.toLocaleString(); // Format ribuan
+            
+            // Update elemen total harga di HTML
+            document.getElementById('total-price').textContent = formattedPrice;
+        }
+    
+        // Panggil fungsi saat halaman dimuat untuk menghitung total harga awal
+        updateTotal();
+    </script>
+    
+</body>
+</html>
